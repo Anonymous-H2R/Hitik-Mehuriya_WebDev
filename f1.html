@@ -5,32 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       td
+        {
+            background: white;
+        } 
+        
+        body
+        {
+            background: linear-gradient(45deg,rgb(0, 157, 255),purple);
+            height: 100vh;
+            
+        }
+        input[type="reset"]
+        {
+            background: rgba(230, 77, 77, 0.81);
+        }
+        button[type="submit"]
+        {
+            background:linear-gradient(45deg,rgb(0, 157, 255),purple);
+        }
+        input[type="radio"]
+        {
+            background: green;
+        }
+    </style>
 </head>
-<body style="background-color: lightblue;">
+<body>
     <center>
         <form>
-            <table>
+            <table cellpadding="0px" cellspacing="0px" >
                 <tr >
-                    <th style="background-color: gray;font-size: 40px;font-family: cursive;">Registration Form</th>
+                    
+                    <th colspan="2" style="background:linear-gradient(45deg,rgb(0, 157, 255),purple); font-size: 30px;">Registration Form</th>
                 </tr>
 
                 <tr>
                     <td>Name:</td>
-                    <td><input type="text" title="FirstName LastName" required min="5"></td>
+                    <td><input type="text" id ="Name"title="FirstName LastName" required min="5"></td>
                 </tr>
                 <tr>
                     <td>Email</td>
-                    <td><input type="text" pattern="[a-z.a-z{0-9}]+@[a-z.a-z]" required></td>
+                    <td><input type="text" pattern="[a-zA-Z.a-zA-Z{0-9}]+@[a-zA-Z.a-zA-Z]" required></td>
                 </tr>
                 <tr>
                     <td>Password:</td>
                     <td> <input type="Password" name="" required> </td>
                 </tr>
+                <tr>
+                    <td>Date:</td>
+                    <td><input type="Date" name="" ></td>
+                </tr>
+
+                <tr>
+                    <td>B'date:</td>
+                    <td><input type="datetime-local" name="" required></td>
+                </tr>
+
+                <tr>
+                    <td>Mobile:</td>
+                    <td><input type="text" name="" required pattern="[0-9]{10}" title="10 digits"> </td>
+                </tr>
+
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea></textarea> </td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="x">Male
+                        <input type="radio" name="x">Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Language:</td>
+                    <td>
+                        <input type="checkbox" name="">English
+                        <input type="checkbox" name="">Hindi
+                        <input type="checkbox" name="">Gujarati
+                    </td>
+                </tr>
 
                 <tr>
                     
-                    <td style="background-color: green;width: min-content;"><input type="submit" ></td>
-                    <td style="background-color: red;width: min-content;"><input type="reset" ></td>
+                    <td ><button type="submit" onclick="SubmitEvent">Register</button></td>
+                    <td ><input type="reset" ></td>
                 </tr>
 
                 <tr>
