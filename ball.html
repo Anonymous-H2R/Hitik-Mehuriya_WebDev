@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main   
+        {
+            height: 700px;
+            background: gray;
+           position: relative;
+           padding: 30px;
+        }
+        .b1 
+        {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgb(36, 95, 35);
+            animation: animateb1 4s infinite ;
+            position: absolute;
+        }
+        .b1:hover
+        {    
+            height: 0px;
+        }
+        .b2 
+        {
+            top: 100px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgb(198, 225, 20);
+            position: absolute; 
+            animation: animateb2 3s infinite ;  
+        }
+        .b2:hover
+        {   
+
+            height: 0px;
+        }
+        .b3 
+        {
+            top: 150px;
+            margin-top: 70px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgb(238, 127, 9);
+            position: absolute;
+            animation: animateb3 2s infinite ;
+        }
+        .b3:hover
+        {   
+            
+            height: 0px;
+        }
+        .b4
+        {
+            top: 200px;
+            margin-top: 70px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgb(4, 66, 239);
+            position: absolute;
+            animation: animateb4 5s infinite ;
+        }
+        .b4:hover
+        {   
+            
+             height: 0px; 
+        }
+        .b5
+        {
+            top: 250px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgb(219, 7, 226);
+            position: absolute;
+            animation: animateb5 4s infinite ;
+        }
+        .b5:hover
+        {   
+           
+            height: 0px;
+        }
+
+        @keyframes animateb1
+        {
+            0%{transform: translateX(0px);}
+            50%{transform:translateX(600px)}
+            100%{transform: translateY(500px);}
+        }
+        @keyframes animateb2
+        {
+            0%{transform: translateX(0px);}
+            50%{transform:translateX(800px)}
+            100%{transform: translateZ(700px);}
+        }
+        @keyframes animateb3
+        {
+            0%{transform: translateX(0px);}
+            50%{transform:translatey(300px)}
+            100%{transform: translateX(500px);}
+        }
+        @keyframes animateb4
+        {
+            0%{transform: translateX(0px);}
+            50%{transform:translateX(800px)}
+            100%{transform: translateZ(900px);}
+        }
+        @keyframes animateb5
+        {
+            0%{transform: translateX(0px);}
+            50%{transform:translateY(-500px)}
+            100%{transform: translateX(500px);}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+        <div class="b4"></div>
+        <div class="b5"></div>
+        
+    </div>
+</body>
+</html>

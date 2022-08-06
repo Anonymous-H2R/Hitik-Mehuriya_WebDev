@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .border
+        {
+            height: 100px;
+            width: 100%;
+            background: gray;
+        }
+        .border .ul
+        {
+            text-align: center;
+        }
+        a
+        {
+            display: inline-block;
+            text-decoration: none;
+            margin-right: 20px;
+            color: white;
+            font-size: 30px;
+        }
+       .border a::after
+        {
+            content: '';
+            display: block;
+            width: 0;
+            height: 10px;
+            transition: .6s;
+            background:  rgb(8, 174, 166);
+        }
+        .border a:hover::after
+        { 
+           width: 100%;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+    <ul>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Men's wear</a>
+        <a href="">Women's wear</a>
+        <a href="">Contact</a>
+       
+
+    </ul>
+</div>
+</body>
+</html>
