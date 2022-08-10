@@ -1,0 +1,128 @@
+MODULE: 1 (HTML)
+
+• Que1- Are the HTML tags and elements the same thing?
+ANS1- No they are not same thing tags are used to perform specific function  
+it consists of the element name (usually an abbreviation of a longer descriptive name) within angle brackets (<>).
+while elements are defined as some content between the start tag and end tag.
+
+
+• Que2- What are tags and attributes in HTML?
+ANS2- tags are used to perform specific function it consists of the element name (usually an 
+abbreviation of a longer descriptive name) within angle brackets (<>). and attributes are the values
+that are passed in tags.
+
+
+• Que3- What are void elements in HTML? 
+ANS3- Void elements doesn’t have ending tags and can only have attributes but do not contain any kind of content.
+
+
+• Que4- What are HTML Entities? 
+ANS4- entities are used to display reserved characters in HTML.
+
+• Que5- What are different types of lists in HTML? • What is the ‘class’ attribute in HTML? 
+ANS4- There are two types of list in HTML they are ordered list and unordered list. In ordered list all the elements of the list will be sorted and in unordered list all the elements will by given in bullet points and would be unordered.
+•A class name can be used by multiple HTML elements.
+
+• Que6- What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements? 
+ANS6- A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page.
+
+• Que7- What are the various formatting tags in HTML?
+ANS7- Formatting tags are used to apply various formatting to our page and make the page more attractive and readable.There are various formatting tags available in HTML like:-
+
+<b> -> used to give bold effect.
+<i> -> used to give italics effect.
+<u> -> Underline text.
+<mark> -> To highlight the text.
+<sup> -> To write content in Superscript.
+<sub> -> To write content in Subscript.
+
+• Que8- How is Cell Padding different from Cell Spacing?
+ANS8- Cell Padding is used to increase the space within the cell and Cell Spacing is used to increase the space outside the cell.
+
+• Que9- How can we club two or more rows or columns into a single row or column in an HTML table?
+ANS9- we can club two or more rows or columns into a single row or column in an 
+HTML table by using rowspan and colspan which will merge 2 or more table rows and columns in single rows and columns.
+
+• Que10- What is the difference between a block-level element and an inline element?
+ANS10- Block level elemnts are elements which cover all the block and  begins a new line.And inline elements are elemnts that dont begin at new line and continue in the existing line it covers only the area till where the content is there which is not the case in block-level elements.
+
+Block Level Elements-> <div>,<p>,<h1>-<h6>,<pre>.
+Inline Elements-> <a>,<br>,<b>,<img>.
+
+• QUE-11 How to create a Hyperlink in HTML? 
+ANS-11 Hyperlink can be created by using anchor tag<a> and by using href attribute 
+
+Eg- <a href="TimeTable_Task1.html">Click Here  
+will create a hyper link and will open contents of TimeTable_Task1.html file.
+
+• QUE-12 What is the use of an iframe tag? 
+ANS-12 iframe tag is used to create or import a webpage inside another webpage.i.e we can add a google map of some place into our webpage.
+
+• QUE-13 What is the use of a span tag? Explain with example?
+ANS-13 The <span> tag is an inline container used to mark up a part of a text, or a part of a document.
+It is much like <div> tag but <div> tag is a block level element and <span> tag is an inline level elememt.
+
+• QUE-14 How to insert a picture into a background image of a web page? 
+ANS-14 background image can be inserted into a web page by using background-image in style attribute and the format for this
+is 
+<body style="background-image: url('https://th.bing.com/th/id/OIP.zsEgRepQ6Uh5OYkkhJyn2gHaE5?pid=ImgDet&rs=1');">
+
+• QUE-15 How are active links different from normal links?
+ANS-15 Normal Link
+Normal Link ( Unvisited Link ) the default color is blue color and underlined but you can apply your own custom styling according to the application’s need. normal link is line of code that contains a pointer to another resource.
+
+Active link
+An active link is that line of code in action, opening that other resource. Active Links shows that the browser is in the process to load a new resource.
+
+• QUE-16 What are the different tags to separate sections of text? 
+ANS-16 The <br> tag is one way to separate the lines of text. There are other tags like the <p> tag and <blockquote> tag that are also used to separate sections of text
+The <br> element is used to insert a line break or carriage-return within a parent element such as a paragraph without breaking out of the parent container
+The HTML <p> element represents a paragraph. Paragraphs are usually represented in visual media as blocks of text separated from adjacent blocks by blank lines and/or the first-line indentation, but HTML paragraphs can be any structural grouping of related content, such as images or form fields.
+
+• QUE-17 What is SVG?
+ANS-17 SVG stands for Scalable Vector Graphics SVG is used to define graphics for the Web.The HTML <svg> element is a container for SVG graphics.SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+
+• QUE-18 What is difference between HTML and XHTML?
+ANS-18 HTML	
+1.	Hypertext mark-up language - - > HTML	
+2.	Tim Berners created in 1991	
+4.	It is an extension of standard generalized markup language or SGML	
+5.	It stored in a document file format	
+6.	It is not case sensitive as there is no mandatory rule to write the entire mark up in uppercase or lower case. It can also be a combination of both.
+7.	It is not mandatory to add document label < DOCTYPE >at the top of every page. We can even skip it.	
+8.	We can close any tag anytime and anywhere as per our needs	
+9.	We can add attributes without any quotes.	
+10.	,html and .htm are the extensions used by HTML
+
+XHTML
+1.Extensible Hypertext Mark-up Language - - > XHTML.
+2.	World wide web consortium or W3C created in 2000
+4.	It is a combination of extensible markup language XML and hypertext markup language HTML
+5.	It stored as a markup language format
+6.	It is case-sensitive, and every tag and attribute used inside must be in lowercase.
+7.	It is mandatory to add a document label < DOCTYPE > at the beginning of the page.
+8.	It is mandatory to close all the tags in strict residing order as they were declared.
+9.	It is mandatory to add quotes on every attribute we declare
+10.	.xhtml, .xml and .xht are the file extensions used by XHTML
+
+
+• QUE-19 What are logical and physical tags in HTML? 
+ANS-19 Physical and Logical tags are used in HTML for better visibility and understanding of the text by the user on the web page. However, both tags differ from each other as suggested by their names.
+
+Logical Tags  :Logical Tags are used in HTML to display the text according to the logical styles.
+Eg-<blockquote>	Defines a long quotation
+<del>	Defines text
+<dfn>	Defines a definition term
+<ins>	Defines inserted text
+ 
+Physical Tags are used in HTML to provide actual physical formatting to the text. 
+Eg- <b>	Defines bold text
+<big>	Defines big text
+<i>	Defines italic text
+<small>	Defines small text
+<sup>	Defines superscripted text
+<sub>	Defines subscripted text
+
+
+
+
