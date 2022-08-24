@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        header
+        {
+            display: grid;
+            grid-template-columns: 7fr 3fr;
+            grid-template-rows: 30px 30px;
+            /* place-items:center; */
+            /* border: 2px solid; */
+        }
+        .navlink
+        {
+            padding-left: 90px;
+        }
+        .navlink :hover 
+        {
+            color: #a161bf;
+        }
+        .navlink a
+        {
+            text-decoration: none;
+            
+            font-size: 20px;
+            /* margin-left: 50px; */
+            margin-right: 30px;
+            color: #1c202a;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 700;
+            /* padding: 20px 0; */
+            line-height: 60PX;
+            letter-spacing: 1px;
+        }
+        .searchbar
+        {
+           
+            line-height: 60PX;
+            border: none;
+            margin-left: 50px;
+           
+        }
+        .searchbar input 
+        {
+           
+           font-size: 14px;
+            border: none;
+           
+        }
+        .searchbar button
+        {
+           
+           
+            border: none;
+           
+        }
+        .logo
+        {
+            display: grid;
+            grid-template-rows: 50px ;
+            margin-top: 60px;
+            text-align: center;
+            
+        }
+
+        .logo .tagline
+        {
+           font-size: 20px;
+           /* color: #696969; */
+            
+        }
+        .content
+        {
+            display: grid;
+            grid-template-rows: 10px;
+            margin-top: 50px;
+            height: 360px;
+            
+            /* border: 2px solid; */
+        }
+        .content .slides 
+        {
+            display: grid;
+            /* grid-template-rows: 1fr; */
+            grid-template-columns: 1260px;
+           
+            
+        }
+        .content .slides li img
+        {
+            width: 100%;
+            height: 360px;
+            /* overflow: hidden; */
+            top: -20px;
+            position: relative;
+            /* opacity: 1; */
+            /* display: block; */
+            /* z-index: 2; */
+        }
+        .content .caption
+        {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: 30px 50px 30px;
+           
+            top: 0;
+            text-align: center;
+            position: relative;
+            
+        }
+        .content .caption :hover 
+        {
+            color: #a161bf;
+            /* border: 2px solid red; */
+            
+        }
+        .content .caption a
+        {
+            /* border: 2px solid red; */
+            text-decoration: none;
+           
+            font-size: 15px;
+           
+            color: white;
+            
+            margin-top: 100px;
+           
+        }
+        .content .caption  #h2
+        {
+            /* border: 2px solid red; */
+            font-size: 30px;
+            font-family: lora,serif;
+        }
+        .text2
+        {
+            display: grid;
+            grid-template-columns: 6fr 4fr;
+           
+            height: 700px;
+            /* background-color: gray; */
+            /* border: 2px solid; */
+            
+        }
+        .text2 .right
+        {
+            display: grid;
+            overflow: auto;
+            grid-template-rows: 50px 50px 50px 400px 50px;
+            /* border: 2px solid; */
+            top: 0;
+            text-align: center;
+            position: relative;
+            
+        }
+        .text2 .right a 
+        {
+            
+            color: #1c202a;
+            text-decoration: none;
+            
+        }
+        .text2 .right a:hover
+        {
+           
+            color: #a161bf;
+        }
+        .text2 .right .postformat
+        {
+            margin-top: 30px;
+            text-transform: uppercase;
+            /* border-bottom: 3px solid #a161bf;  */
+            /* border-left: 6px solid #a161bf; */
+            /* border-width: 10%; */
+            /* width: 90px; */
+           
+            
+        }
+        .text2 .right .poststd
+        {
+            /* margin-top: 30px; */
+            /* overflow: auto; */
+            padding-bottom: 20px;
+            /* border: 2px solid red; */
+            
+        }
+        .text2 .right .posted
+        {
+            margin-top: 30px;
+            /* overflow: auto; */
+           text-transform: uppercase;
+            /* border: 2px solid red; */
+            
+        }
+        .text2 .right .readmore
+        {
+            /* overflow: auto; */
+           text-transform: uppercase;
+            /* border: 2px solid red; */
+            border-inline-end:4px solid #a161bf ;
+            border-left: 4px solid #a161bf;
+            border-right: 4px solid #a161bf;
+            
+            
+        }
+        .text2 .left
+        {
+            display: grid;
+            overflow: auto;
+            grid-template-rows: 50px 300px 50px;
+            /* border: 2px solid; */
+            top: 0;
+            
+            position: relative;
+            
+        }
+        .text2 .left .aboutme
+        {
+            margin-top: 30px;
+            text-transform: uppercase;
+            border-bottom: 3px solid #a161bf;
+            width: 90px;
+            
+        }
+        
+        .text2 .left .img2
+        {
+            margin-top: 30px;
+            
+        }
+        .text2 .left .followme
+        {
+            text-transform: uppercase;
+            border-bottom: 3px solid #a161bf;
+            width: 90px;
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navlink">
+            <a href="">Home</a>
+            <a href="">About the test
+
+            </a>
+            <a href="">Level1</a>
+            <a href="">Shop</a>
+
+        </div>
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+            <button type="submit" class="header-search-icon" name="submit" id="searchsubmit" value="Search">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </header>
+    <section>
+        <div class="logo">
+            <div class="pic">
+            <img width="217" height="30" src="https://colorlibhub.com/activello/wp-content/uploads/sites/57/2015/11/logo.png" alt="Activello Theme Demo">
+            </div>
+            <div class="tagline">Just another colorlib.com site</div>
+        </div>
+    </section>
+
+    <section>
+        <div class="content"> 
+            <div class="slides">
+                <li>
+                    <img  src="https://colorlibhub.com/activello/wp-content/uploads/sites/57/2012/03/photo-1437915015400-137312b61975-1920x550.jpg" alt="" loading="lazy" >
+                </li>
+            </div>
+                <div class="caption">
+                    <a href="">TEMPLATE</a>
+                    <a href="" id="h2">Template:Featured Image </a>
+                    <a href="">READ MORE</a>
+                 
+
+                </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text2">
+            <div class="right">
+                <div class="postformat"><a href="">post formats</a></div>
+                <div class="poststd"><a href=""><h2>Post Format:Standard</h2></a></div>
+                <div class="posted"><a href=""> Posted on October 5 2016 by Algars</a></div>
+                <div class="image">
+                    <img width="710" height="335" src="https://colorlibhub.com/activello/wp-content/uploads/sites/57/2015/11/photo-1438109491414-7198515b166b-710x335.jpg" alt="" srcset="https://colorlibhub.com/activello/wp-content/uploads/sites/57/2015/11/photo-1438109491414-7198515b166b-710x335.jpg 710w, https://colorlibhub.com/activello/wp-content/uploads/sites/57/2015/11/photo-1438109491414-7198515b166b-1170x550.jpg 1170w" 
+                    sizes="(max-width: 710px) 100vw, 710px">
+                    <br>
+                    All children, except one, grow up. They soon know that they will grow up, and the way Wendy knew was this.
+                </div>
+                <div class="readmore"><a href="">Readmore</a></div>
+               
+            </div>
+            <div class="left">
+                <div class="aboutme" >about me
+                    
+                </div>
+                <div class="img2">
+                    <img width="70%" height="200px"src="https://colorlibhub.com/wp-content/uploads/sites/57/2015/11/photo-1438109491414-7198515b166b1.jpg" alt="About Me">
+                    <p>My name is Activello and I am an awesome WordPress blog theme for photography, food, travel and other blogs. I was created by colorlib.</p>
+                </div>
+                <div class="followme"><span style="font-size: 15px;">Follow me</span> 
+
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

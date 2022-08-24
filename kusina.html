@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .main
+        {
+            height: 635px;
+           
+            display: flex;
+        }
+        .main .left
+        {
+            height: 635px;
+            width: 50%;
+           
+            position: relative;
+            
+
+        }
+        .main .left .header
+        {
+            margin: 0;
+            padding: 0;
+            font-weight: bolder;
+            font-size: 25px;
+            
+            padding-top: 55px;
+            padding-left: 50px;
+            /* line-height: 50px; */
+            
+        }
+        .main .left h1
+        {
+            padding: 0;
+            margin: 0;
+           padding-left: 50px;
+           padding-top: 40px;
+           font-size: 45px;
+
+        }
+        .main .left  p
+        {
+            margin: 0;
+            padding: 0;
+           padding-left: 50px;
+           padding-top: 35px;
+           font-size: 20px;
+        }
+        .main .left  .content .content1
+        {
+
+           z-index: 1;
+            opacity: 1;
+            /* z-index: 0; */
+            position: absolute;
+            animation: animatediv1 5s ease-in-out  infinite;
+        }
+        
+        .main .left  .content .content2
+        {
+           z-index: 0;
+            opacity: 0;
+            /* z-index:1; */
+            position: absolute;
+            animation: animatediv2 5s  ease-in-out  infinite;
+        }
+        .main .left  .content .content1 .links
+        {
+            /* opacity: 0; */
+            position: relative;
+            z-index: 1;
+            animation: animatediv1 5s ease-in-out  infinite;
+        }
+        .main .left  .content .content2 .links
+        {
+            /* opacity: 1; */
+            position: relative;
+            z-index: 0;
+            animation: animatediv2 5s  ease-in-out  infinite;
+
+        }
+        .main .left .links .link1
+        {
+            background-image: url(https://technext.github.io/kusina/images/menu-1.jpg);
+            border-radius: 50%;
+            background-size: 100% 100%;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 70px;
+            top:30px;
+            text-align: center; 
+
+          
+          
+        }
+        .main .left .links .link1 p
+        {
+            position: absolute;
+            
+            left: -48px;
+            top:60px;
+            font-size: 10px;
+          
+          
+        }
+        .main .left .links .link2
+        {
+            background-image: url(https://technext.github.io/kusina/images/menu-2.jpg);
+            border-radius: 50%;
+            background-size: 100% 100%;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 260px;
+            top:30px
+          
+          
+        }
+        .main .left .links .link2 p
+        {
+            position: absolute;
+           text-align: center;
+            
+            left: -48px;
+            top:60px;
+            font-size: 10px;
+          
+          
+        }
+        .main .left .links .link3
+        {
+            background-image: url(https://technext.github.io/kusina/images/menu-3.jpg);
+            border-radius: 50%;
+            background-size: 100% 100%;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 440px;
+            top:30px
+          
+          
+        }
+        .main .left .links .link3 p
+        {
+            position: absolute;
+            text-align: center;
+            
+            left: -48px;
+            top:60px;
+            font-size: 10px;
+          
+          
+        }
+        .main .left .button a
+        {
+            text-decoration: none;
+            color: white;
+            position: absolute;
+            height: 50px;
+            width: 150px;
+            background:  #f34949;
+            border: 1px solid #f34949;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            left: 50px;
+            top: 500px;
+          
+          
+        }
+        .main .right
+        {
+            height: 635px;
+            width: 50%;
+            background-image: url(https://technext.github.io/kusina/images/bg_3.jpg);
+            background-size: 100% 100%;
+           position: relative;
+           animation: animatebg 5s ease-in-out infinite ;
+            
+        }
+        .main .right ul 
+        {
+            position: absolute;
+            font-size: 18px;
+            text-decoration: none;
+            top: 40px;
+           
+ 
+        }
+        .main .right ul a
+        {
+            font-size: 18px;
+            text-decoration: none;
+            
+            margin-right: 30px;
+            color: orange;
+ 
+        }
+        @keyframes animatebg 
+        {
+            from{ background-image: url(https://technext.github.io/kusina/images/bg_3.jpg);
+            background-size: 100% 100%}
+            to{background-image: url(https://technext.github.io/kusina/images/bg_2.jpg);background-size: 100% 100;}
+        }
+
+        @keyframes animatediv1
+        {
+            from{ z-index: 1;opacity: 1;}
+            to{z-index: 0; opacity: 0;}
+        }
+        @keyframes animatediv2
+        {
+            from{z-index: 0;opacity: 0; }
+            to{ z-index: 1;opacity: 1;}
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="header">Kusina</div>
+    <div class="content">
+        <div class="content1">
+                <h1> Eat Healthy <br> and Natural Foods</h1>
+                <p>A small river named Duden flows by their place and supplies it with <br>the neccessary regieliaalia.it is paradisematic country</p>
+         <div class="links">
+            <div class="link1">
+               <p>Australian Organic <br> Beef</p> 
+            </div>
+            <div class="link2">
+                <p>Australian Organic <br> Beef</p> 
+            </div>
+            <div class="link3">
+                <p>Australian Organic <br> Beef</p> 
+            </div>
+        </div>
+    </div>
+    <div class="content2">
+        
+        <h1>We Love<br> Delicious Foods</h1>
+        <p>A small river named Duden flows by their place and supplies it with <br>the neccessary regieliaalia.it is paradisematic country</p>
+ <div class="links">
+    <div class="link1">
+       <p>Australian Organic <br> Beef</p> 
+    </div>
+    <div class="link2">
+        <p>Australian Organic <br> Beef</p> 
+    </div>
+    <div class="link3">
+        <p>Australian Organic <br> Beef</p> 
+    </div>
+</div>
+</div>
+    </div>
+
+            <div class="button">
+                <a href="">Book A Table</a>
+            </div>
+        </div>
+        <div class="right">
+            <ul>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Specialities</a>
+                <a href="">Reservation</a>
+                <a href="">Stories</a>
+                <a href="">Contact</a>
+            </ul>
+        
+        </div>
+        
+        
+    </div>
+</body>
+</html>
