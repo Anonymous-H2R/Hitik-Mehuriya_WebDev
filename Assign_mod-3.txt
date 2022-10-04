@@ -1,0 +1,40 @@
+OUE1- What are the new tags added in HTML5?
+ANS1- 
+<article> - Defines an article
+<audio>	- Defines sound content
+<canvas> - Defines graphics
+<footer> - Defines a footer for a section or page
+<header> - Defines a header for a section or page
+<mark> - Defines marked text
+<nav> - Defines navigation links
+<section> - Defines a section
+<time> - Defines a date/time
+
+
+OUE2- How to embed audio and video in a webpage?
+ANS2- to add video or sound to  web site we include the HTML tag called <embed>. This tag causes the browser itself to include controls for the multimedia automatically provided browser supports <embed> tag and given media type. various attributes of <embed> tags are 
+loop-
+Specifies if the sound should be played continuously (set loop to true), a certain number of times (a positive value) or not at all (false)
+	
+playcount-
+Specifies the number of times to play the sound. This is alternate option for loop if you are usiong IE.
+	
+src-
+URL of the object to be embedded.
+
+volume-
+Controls volume of the sound. Can be from 0 (off) to 100 (full volume).
+
+QUE3- Semantic element in HTML5?
+ANS3-Semantic HTML elements are those that  describe their meaning in a very readable and neat way.
+Elements such as <header>, <footer> and <article> are all considered semantic because they accurately describe the purpose of the element and the type of content that is inside them.
+
+QUE4-Canvas and SVG tags 
+ANS4-SVG:-
+The Scalable Vector Graphics (SVG) is an XML-based image format that is used to define two-dimensional vector-based graphics for the web. Unlike raster image (Ex .jpg, .gif, .png, etc.), a vector image can be scaled up or down to any extent without losing the image quality.
+
+An SVG image is drawn out using a series of statements that follow the XML schema — that means SVG images can be created and edited with any text editor, such as Notepad. There are several other advantages of using SVG over other image formats like JPEG, GIF, PNG, etc.
+
+CANVAS-
+
+The HTML canvas element is used to draw graphics on the fly, via scripting (usually JavaScript). The element is only a container for graphics. You must use a script to actually draw the graphics. Canvas has several methods for drawing paths, boxes, circles, text, and adding images.Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser. If its position should be changed, the entire scene needs to be redrawn, including any objects that might have been covered by the graphic.
