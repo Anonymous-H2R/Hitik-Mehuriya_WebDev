@@ -1,0 +1,55 @@
+QUE1-What is jQuery?
+
+ANS1-jQuery is a JavaScript Library that simplifies HTML document 
+traversing, event handling, animating. jQuery is designed to change the way that you write JavaScript.It is used to lessen the code and help programmer to attain the same output without writing much code.jQuery is a multi-browser JavaScript library designed to simplify the client-side scripting of HTML.
+
+OUE2-How to Apply CSS Using JQuery, How to Add Class and Remove Class in JQuery, 
+JQuery Animation?
+
+ANS2-we can apply css using jquery by using document.ready and then by writing .css and then writing the desired css propert
+$(document).ready(function(){
+$(".class1").css("background-color","#00F");
+});
+
+.addClass()
+addClass( className )
+ Adds the specified class(es) to each of the set of matched elements.
+classNameOne or more class names to be added to the class attribute of each 
+matched element.
+$("#div1").click(
+function(){
+$("#div1").addClass("class1");
+});
+
+removeClass()
+.removeClass( [className] )
+Remove a single class, multiple classes, or all classes from each element 
+in the set of matched elements
+$("#div1").click(
+function(){
+$("#div1").removeClass("class1");
+} );
+
+animate()
+
+ Perform a custom animation of a set of CSS properties.
+.animate( properties [, duration] [, easing] [, complete] 
+
+QUE3- How to create slider with animation? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
