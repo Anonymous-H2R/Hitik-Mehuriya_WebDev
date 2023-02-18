@@ -1,0 +1,476 @@
+
+@mixin heading()
+{
+    font-size:3rem;
+    text-align:
+
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body
+{
+    overflow-x: hidden;
+    /* height: 2000px; */
+}
+.header
+{
+    width: 100%;
+    display: flex;
+    padding: 1rem 2rem;
+    background: #fff;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: 0.1rem .5rem rgba(51, 51, 51, 0.5);
+}
+
+.header a
+{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+
+.fa-bars
+{
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+/* .fa-times
+{
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    display: none;
+} */
+.header ul 
+{
+   list-style: none;
+   display: flex;
+      margin: 0;
+      padding: 0;
+}
+.header .navbar ul li {
+    margin: 0 1.5rem;
+  }
+  .header .navbar ul li a:hover 
+  {
+    padding-bottom: 0.3rem;
+    border-bottom: .2rem solid rgb(0, 208, 255);
+  }
+
+
+/* home section */
+.home
+{
+    background: url(https://img.freepik.com/free-photo/young-handsome-smiling-happy-man-holding-vintage-photo-camera-isolated-white-studio-background-wearing-denim-shirt-hat-sunglasses-photographer-traveling-taking-pictures_285396-1532.jpg?w=900&t=st=1676482459~exp=1676483059~hmac=de024bc10c692fb592d224c3e63a5b6a9c5f3e7a32fb79f6bd24ef99b2871cfa);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+   
+}
+
+.home h2
+{
+font-size: 3rem;
+color: #333;
+}
+
+.home h1
+{
+color: #333;
+font-size: 4rem;
+margin: 2rem 0;
+text-shadow:.1rem .1rem .1rem rgba(255, 255, 255,.9);
+}
+
+.home span
+{
+    color: rosybrown;
+}
+
+.home button
+{
+    height: 4rem;
+    width: 16rem;
+    background:#333;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow:0rem .5rem 1rem rgba(51,51,51,3);
+}
+
+.about
+{
+    padding-bottom: 3rem;
+}
+.about .heading
+{
+    /* @include heading() */
+    font-size:3rem;
+    text-align:center;
+    color: #333;
+    margin: 3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+}
+
+.about .heading::after
+{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background: #333;
+}
+
+.about .info
+{
+    padding: 0 2rem;
+}
+.about .info h2
+{
+    font-size: 3rem;
+    color: rgb(12, 138, 207);
+}
+.about .info p
+{
+    font-size: 1.7rem;
+    color: #333;
+    padding-bottom: 3rem;
+    
+}
+.about .info .skill-bar h3
+{
+margin-top: 2rem;
+}
+.about .info span
+{
+    display: block;
+    text-align: end;
+}
+.about .info .bar
+{
+    width: 100%;
+    height: .5rem;
+    background: #ccc;
+    position: relative;
+}
+.about .info .bar span
+{
+    height: 100%;
+    width: 100%;
+   display: block;
+    position: absolute;
+    background:  rgb(12, 138, 207);
+}
+
+.about .info .bar1 span
+{
+    width: 95%;
+}
+.about .info .bar2 span
+{
+    width: 85%;
+}
+.about .info .bar3 span
+{
+    width: 65%;
+}
+
+.service
+{
+    min-height: 100vh;
+}
+.service .heading
+{
+    
+    font-size:3rem;
+    text-align:center;
+    color: #333;
+    margin: 3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+}
+
+.service .heading::after
+{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background: #333;
+}
+
+.service .box-container
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box
+{
+    height: 20rem;
+    width: 25rem;
+    background: #f7f7f7;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 5rem;
+    margin: 2rem;
+    border-radius: .5rem;
+}
+
+
+.service img
+{
+    height: 6rem;
+    width: 6rem;
+}
+.service h2
+{
+    padding-top: 1rem;
+    color: #333;
+}
+.service .box-container :hover
+{
+    background: #333;
+}
+
+.service h2:hover
+{
+    padding-top: 1rem;
+    color: #fff;
+}
+
+.service img:hover
+{
+    padding-top: 1rem;
+    filter: invert(1);
+}
+
+
+
+.experience
+{
+    min-height: 100vh;
+    background: #333;
+}
+.experience .heading
+{
+    color: #fff;
+    font-size:3rem;
+    text-align:center;
+    margin: 3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+}
+.experience .heading::after
+{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background: #fff;
+}
+.experience .box
+{
+    height: 23rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    border-left: .1rem solid #fff;
+    position: relative;
+}
+.experience .box::after
+{
+    content: '';
+    position: absolute;
+    top: -.5rem;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    background: #fff;
+    border-radius: 50%;
+}
+.experience .box .year
+{
+    color: #fff;
+    font-size: 2.5rem;
+}
+.experience .box h3
+{
+   font-size: 2rem;
+   color: yellow;
+   margin: 1rem 0;
+}
+
+.experience .box p
+{
+   font-size: 1.5rem;
+   color: #ccc;
+   
+}
+
+#counter
+{
+    width: 100%;
+    background: linear-gradient(100deg,#333 50%,#fff 50%);
+    display: flex;
+    justify-content: center;
+    padding:3rem 0;
+    text-align: center;
+}
+
+.counter-box
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(51, 51, 51, 0.3);
+}
+
+.counter-box .count
+{
+    margin: 2rem 3.5rem;
+    color: blue;
+}
+.counter-box .count h2
+{
+    font-size: 1.7rem;
+}
+
+.portfolio
+{
+    min-height: 100vh;
+
+}
+
+.portfolio .heading
+{
+    color: #333;
+    font-size:3rem;
+    text-align:center;
+    margin: 3rem 0;
+    padding-top: 5.5rem;
+    position: relative;
+}
+
+.portfolio .heading::after
+{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background: #333;
+}
+
+.portfolio .controls
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.portfolio .controls .buttons
+{
+    height: 4rem;
+    width: 15rem;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* media queries */
+  @media ( max-width: 768px)
+  {
+    html
+    {
+        font-size: 55%;
+    }
+
+    .home
+    {
+        background-position: center;
+    }
+    .header .fa-bars
+    {
+       display: block;
+    } 
+
+    .navbar
+    {
+        position: fixed;
+        top: -120%;
+        left: 0;
+        height: calc(100vh-5.2rem);
+        width: 100vw;
+        background: #fff;
+        border-top: .1rem solid rgba(51, 51, 51, 0.5);
+       
+       
+    }
+    .navbar ul
+    {
+        height:100%;
+        width: 100%;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .navbar ul li
+    {
+        margin: 1.5rem 0;
+    }
+
+    .nav-toggle
+    {
+        top: 5.2rem;
+    }
+  }
