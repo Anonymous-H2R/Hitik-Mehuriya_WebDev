@@ -1,0 +1,31 @@
+Q1- Write a program to Show an alert
+A1-
+<script>
+  	alert("Hello! I am an alert box!");
+</script>
+
+Q2-What will be the result for these expressions?
+1. 5 > 4
+2. "apple" > "pineapple"
+3. "2" > "12"
+4. undefined == null
+5. undefined === null
+6. null == "\n0\n"
+7. null === +"\n0\n" 
+
+A2-
+1.true
+2.false
+3.true
+4.true
+5.false
+6.false
+7.false
+
+Q3-Will alert be shown?
+if ("0") { alert( 'Hello'); }
+A3- yess
+
+Q4-What is the code below going to output? alert( null || 2 || undefined );
+A4-2
+
