@@ -1,0 +1,95 @@
+Module-4
+
+Q1-What is JavaScript?
+A1-Javascript is an client side scripting language which is a losely typed and dynamic language which is used to make webpage responsive and interactive with the user.
+
+Q2-What is the use of isNaN function? 
+A2-isNaN() function is used to check whether the parameter passed in the function is Not a Number or not.
+ 
+Q3-What is negative Infinity?
+A3-negative infinity is a numeric value that is returned when an arithmetic operation or mathematical function generates a negative value greater than the largest representable number in JavaScript.
+
+Q4-Which company developed JavaScript? 
+A4- javascript was invented by Brendan Eich at Netscape communication corporation in 1995.
+
+Q5-What are undeclared and undefined variables? 
+A5-Undefined variable means a variable has been declared but does not have a value. Undeclared variable means that the variable does not exist in the program at all.
+
+Q6-Write the code for adding new elements dynamically? 
+A6- 
+
+<div id="innerdiv"></div>
+   	<button id="mybutton">
+      Click to Add HTML element
+   	</button>
+  <script>
+      document.getElementById("mybutton").
+      addEventListener("click", function () {
+         document.getElementById("innerdiv").innerHTML += "<h3>Hello User</h3><p>how are you today.</p>";
+      });
+   </script>
+
+Q7- What is the difference between ViewState and SessionState? 
+A7-ViewState is to manage state at the client's end, making state management easy for end-user while SessionState manages state at the server's end making it easy to manage content from this end too.
+
+Q8-What is === operator? 
+A8- === is a comparison operator it returns true only if both values and data types are the same for the two variables.
+
+Q9-How can the style/class of an element be changed?
+A9-We can  change the style/class of an element by
+ The className Property: This property is used to set the current class of the element to the specified class.
+
+document.getElementById("id").className = class
+
+Q10-How to read and write a file using JavaScript? 
+A10-Files can be read and written by using java script functions – fopen(),fread() and fwrite().
+
+Q11-What are all the looping structures in JavaScript? 
+A11-looping structures are the structures which are used when we want to execute a statement continously in a loop. there are many types of loops used in javascript they are 
+
+for - loops through a block of code a number of times.
+for/in - loops through the properties of an object.
+for/of - loops through the values of an iterable object.
+while - loops through a block of code while a specified condition is true.
+do/while - also loops through a block of code while a specified condition is true.
+
+Q12-How can you convert the string of any base to an integer in JavaScript?
+A12-  to convert a string of any base to an integer we use an inbuilt function parseInt() which converts string to an integer.
+
+Q13-What is the function of the delete operator? 
+A13-The delete operator removes a property from an object. it works only when deleting property and returns true, it returns false when  while trying to delete a variable or a function.
+
+Q14- What are all the types of Pop up boxes available in JavaScript? 
+A14- There are 3 types of popup boxes in js which are 
+1.alert box
+2.prompt box
+3.confirm box
+
+the alert box is used to display some message on the screen to the user.
+the prompt box is used to take input from the user.
+the confirm box is used to take confirmation from the user it has 2 buttons. 
+
+
+Q15-What is the use of Void (0)? 
+A15-avaScript void 0 means returning undefined (void) as a primitive value. It is used to prevent any side effects caused while inserting an expression in a web page.
+
+Q16-How can a page be forced to load another page in JavaScript? 
+A16-We can use window.location property inside the script tag to forcefully load another page in Javascript. It is a reference to a Location object that is it represents the current location of the document. We can change the URL of a window by accessing it.
+
+Q17-What are the disadvantages of using innerHTML in JavaScript? 
+A17-disadvantages of using innerHTML
+Event handlers attached to any DOM element are preserved.
+Replacement is done everywhere.
+It is not possible to append innerHTML.
+Breaks the document.
+Used for Cross-site Scripting.
+
+
+
+
+
+
+
+
+
+
