@@ -1,0 +1,117 @@
+Q1- What is React Js?
+A1- react js is a javascript librabry which is used for building user interface it also provides updates without refreshing the page and also gives security to the source code.
+
+Q2- What is NPM in React Js?
+A2- npm is node package manager which is a packet manager for js that comes with NodeJS. the package contains all files needed for modules. it has software library.
+
+Q3- What is Role of Node Js in react Js?
+A3-Node uses a node package manager or an NPM to install all new updates and packages.Node bundles single applications built through React to simplify the compilation process. This is done through the use of appropriate Node modules and by using a web pack.
+
+Q4-What is CLI command In React Js?
+A4- Command Line Interface or CLI is a command line program that accepts text input to execute operating system functions.
+some commands are.....
+
+cd ..	Move one level up (one folder) in the file system.
+cp	Copy a file to another folder.
+mv	Move a file to another folder.
+mkdir	Creates a new directory (folder).
+rmdir	Remove a directory (folder).
+clear	Clears the CLI window.
+exit	Closes the CLI window.
+man command	Shows the manual for a given command.
+
+Q5- What is Components in React Js?
+A5- Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.Components come in two types, Class components and Function components, in this tutorial we will concentrate on Function components.
+
+Q6- What is Header and Content Components in React Js?
+A6- The Header is an important element of a website’s design. It’s the first impression of the website. It provides useful links to other areas of the website that the user may want to visit. In this article, we will create a functioning Header using React.js and Material UI.
+
+Q7- How to install React Js on Windows, Linux Operating System? How to Install NPM and How to check version of NPM?
+
+A7- Install Node.js installer for windows.Here install the LTS version (the one present on the left). Once downloaded open NodeJS click on the Next button until it’s completely installed.
+
+ Now in the terminal run the below command: 
+
+npm install -g create-react-app  
+
+The command to check your npm version is npm -v or npm --version. 
+
+Q8-How to check version of React Js?
+A8-We can easily check the React version by using the command mentioned below on our command line.
+
+npm view react version
+
+Q9-How to change in components of React Js?
+A9-We have to set initial state value inside constructor function and set click event handler of the element upon which click, results in changing state. Then pass the function to the click handler and change the state of the component inside the function using setState. The setState function used to change the state of the component directly or with the callback approach as mentioned below.
+
+Syntax:
+
+this.setState({ stateName : new-state-value})
+this.setState(st => {
+  st.stateName = new-state-value
+})
+
+Q10- How to Create a List View in React Js?
+A10- The ListView Component is an inbuilt React Native view component that displays a list of items in a vertically scrollable list. 
+import React, { Component } from "react";
+import { Text, View, StyleSheet, ListView } from "react-native";
+import { Icon } from "react-native-elements";
+  
+const ds = new ListView.DataSource({
+  rowHasChanged: (r1, r2) => r1 !== r2
+});
+  
+class App extends Component {
+  state = {
+    dataSource: ds.cloneWithRows([
+      "Data Structures",
+      "STL",
+      "C++",
+      "Java",
+      "Python",
+      "ReactJS",
+      "Angular",
+      "NodeJs",
+      "PHP",
+      "MongoDb",
+      "MySql",
+      "Android",
+      "iOS",
+      "Hadoop",
+      "Ajax",
+      "Ruby",
+      "Rails",
+      ".Net",
+      "Perl",
+    ]),
+  };
+  
+  render() {
+    return (
+      <View style={styles.screen}>
+        <ListView
+          dataSource={this.state.dataSource}
+          renderRow={(rowData) => (
+            <View style={styles.row}>
+              <Text style={styles.rowText}>{rowData}</Text>
+              <Icon name="ios-eye" type="ionicon" color="#C2185B" />
+            </View>
+          )}
+        />
+      </View>
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
